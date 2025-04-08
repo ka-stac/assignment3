@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Charity Hope</title>
+    <link rel="stylesheet" href="styles.css" >
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">CharityHope</div>
+      <input type="checkbox" id="menu-toggle" >
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#our-work">Our Work</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="sidebar">
+        <label for="menu-toggle" class="close-btn">&times;</label>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#our-work">Our Work</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero" id="home">
+      <h1>Help Us Make a Difference</h1>
+      <p>Join us in bringing hope to those in need.</p>
+    </header>
+
+    <main class="content">
+      <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+          We’re dedicated to helping vulnerable communities around the world
+          through donations, volunteer work, and love.
+        </p>
+      </section>
+
+      <section class="our-work" id="our-work">
+        <h2>Our Work</h2>
+        <p>
+          We’ve worked with communities around the world to provide food,
+          shelter, education, and hope.
+        </p>
+
+        <div class="slider">
+          <div class="slides">
+            <img
+              src= "images/charity1.jpeg"
+              alt="CharityImage1"
+            >
+            <img
+              src="images/charity2.jpeg"
+              alt="CharityImage2"
+            >
+            <img
+              src="images/chqrity3.jpeg"
+              alt="CharityImage3"
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="donate" id="donate">
+        <h2>Donate</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" required >
+
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" required >
+
+          <button type="submit">Donate Now</button>
+        </form>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="email">Email</label>
+          <input type="email" id="email" required >
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 CharityHope. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
